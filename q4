@@ -1,0 +1,7 @@
+select 
+	end_terminal, 
+	AVG(duration)
+from 
+	trips 
+group by  1
+

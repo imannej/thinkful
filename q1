@@ -1,8 +1,9 @@
 SELECT
-trip_id,
-duration
+    date,zip,
+    MAX(maxtemperaturef)
 FROM
-    trips
-WHERE
-    duration >500 
-ORDER BY duration DESC;
+    weather
+group by 1,2
+ORDER by max DESC
+LIMIT 1
+;
